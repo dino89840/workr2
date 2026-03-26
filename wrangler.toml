@@ -2,12 +2,6 @@ name = "r2-multi-uploader"
 main = "src/worker.mjs"
 compatibility_date = "2026-03-26"
 
-# Workers သာမန် Free Plan က 10ms CPU time limit ရှိပေမယ့် 
-# I/O Bound (Network stream) ဖြစ်တဲ့အတွက် လုံလောက်ပါတယ်။ 
-# ပိုကြီးတဲ့ ဖိုင်တွေအတွက်ဆိုရင်တော့ "unbound" ကို သုံးဖို့ အကြံပြုပါတယ်။
-# usage_model = "unbound" 
-
 [vars]
 R2_ACC1_BUCKET_NAME = "your-bucket-1"
 R2_ACC2_BUCKET_NAME = "your-bucket-2"
-# Secret keys တွေကို `wrangler secret put` (သို့) Cloudflare Dashboard ကနေ ထည့်ပါ
