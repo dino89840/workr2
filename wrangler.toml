@@ -1,4 +1,4 @@
-name = "r2-multi-uploader"
+name = "workr2pro"
 main = "src/worker.mjs"
 compatibility_date = "2026-03-26"
 
